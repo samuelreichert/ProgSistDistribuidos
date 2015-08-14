@@ -15,8 +15,9 @@ public class HttpFeevale {
       out.print("GET / HTTP/1.0\r\n\r\n");
       out.flush();
 
-      while (in.readLine() != null){
-        System.out.println(in.readLine());
+      String r;
+      while ((r = in.readLine()) != null){
+        System.out.println(r);
       }
 
     }catch(Exception e){
