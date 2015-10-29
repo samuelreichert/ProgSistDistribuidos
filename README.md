@@ -1,5 +1,8 @@
-# ProgSistDistribuidos
-Armazenar todos códigos fontes das aulas de sistemas distríbuidos (Feevale - 6º Semestre - 2015/02)
+# Conteúdo das aulas Prog Sist Distribuidos
+* Disciplina: _Programação para Sistemas Distribuídos_
+* Semestre: _6º Semestre_
+* Curso: _Sistemas para Internet_
+* Universidade: _Universidade Feevale_
 
 ## Para rodar os códigos fontes
 
