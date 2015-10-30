@@ -1,4 +1,5 @@
 
+import java.awt.Color;
 import java.rmi.Naming;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
@@ -137,10 +138,16 @@ public class MacPDVGUI extends javax.swing.JFrame {
 
     private void btComprarFritasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btComprarFritasActionPerformed
         pdv.makeOrder(new Order("Fritas"));
+        this.labelStatus.setText("Pedido em Processamento");
+        this.labelStatus.setForeground(Color.red);
+        this.btEntregar.setEnabled(false);
     }//GEN-LAST:event_btComprarFritasActionPerformed
 
     private void btComprarBigMacActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btComprarBigMacActionPerformed
         pdv.makeOrder(new Order("Big Mac"));
+        this.labelStatus.setText("Pedido em Processamento");
+        this.labelStatus.setForeground(Color.red);
+        this.btEntregar.setEnabled(false);
     }//GEN-LAST:event_btComprarBigMacActionPerformed
 
     private void btEntregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEntregarActionPerformed
@@ -149,10 +156,16 @@ public class MacPDVGUI extends javax.swing.JFrame {
 
     private void btComprarRefriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btComprarRefriActionPerformed
         pdv.makeOrder(new Order("Refri"));
+        this.labelStatus.setText("Pedido em Processamento");
+        this.labelStatus.setForeground(Color.red);
+        this.btEntregar.setEnabled(false);
     }//GEN-LAST:event_btComprarRefriActionPerformed
 
     private void btComprarSucoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btComprarSucoActionPerformed
         pdv.makeOrder(new Order("Suco"));
+        this.labelStatus.setText("Pedido em Processamento");
+        this.labelStatus.setForeground(Color.red);
+        this.btEntregar.setEnabled(false);
     }//GEN-LAST:event_btComprarSucoActionPerformed
 
     /**
@@ -195,7 +208,7 @@ public class MacPDVGUI extends javax.swing.JFrame {
     private javax.swing.JButton btComprarFritas;
     private javax.swing.JButton btComprarRefri;
     private javax.swing.JButton btComprarSuco;
-    private javax.swing.JButton btEntregar;
-    private javax.swing.JLabel labelStatus;
+    public static javax.swing.JButton btEntregar;
+    public static javax.swing.JLabel labelStatus;
     // End of variables declaration//GEN-END:variables
 }

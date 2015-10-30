@@ -23,11 +23,12 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jScrollPane1" pref="388" max="32767" attributes="0"/>
-                  <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="notifyDone" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" alignment="0" pref="388" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
                       <Component id="txtURI" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="btConectar" min="-2" max="-2" attributes="0"/>
@@ -41,13 +42,14 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Component id="jScrollPane1" pref="219" max="32767" attributes="0"/>
+              <Component id="jScrollPane1" pref="210" max="32767" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="txtURI" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btConectar" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="notifyDone" min="-2" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -83,6 +85,14 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btConectarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="notifyDone">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Notificar Pedido Pronto"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="notifyDoneActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

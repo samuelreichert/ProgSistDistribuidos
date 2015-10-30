@@ -3,13 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/gabriel/Documents/vm_share/FEEVALE/Programacao%20Sistemas%20Distribuidos/aplicacoes/RMIMacDonalds/src/MacPDVGUI.java</file>
-            <file>file:/Users/gabriel/Documents/vm_share/FEEVALE/Programacao%20Sistemas%20Distribuidos/aplicacoes/RMIMacDonalds/src/PainelCozinha.java</file>
-            <file>file:/Users/gabriel/Documents/vm_share/FEEVALE/Programacao%20Sistemas%20Distribuidos/aplicacoes/RMIMacDonalds/src/MacPDV.java</file>
-            <file>file:/Users/gabriel/Documents/vm_share/FEEVALE/Programacao%20Sistemas%20Distribuidos/aplicacoes/RMIMacDonalds/src/MacPDVService.java</file>
-            <file>file:/Users/gabriel/Documents/vm_share/FEEVALE/Programacao%20Sistemas%20Distribuidos/aplicacoes/RMIMacDonalds/src/Client.java</file>
-            <file>file:/Users/gabriel/Documents/vm_share/FEEVALE/Programacao%20Sistemas%20Distribuidos/aplicacoes/RMIMacDonalds/src/ClientScreen.java</file>
-            <file>file:/Users/gabriel/Documents/vm_share/FEEVALE/Programacao%20Sistemas%20Distribuidos/aplicacoes/RMIMacDonalds/src/Order.java</file>
+            <file>file:/home/samuel/Projects/feevale/ProgSistDistribuidos/20151029-RMIMcDonalds/src/ClientScreen.java</file>
+            <file>file:/home/samuel/Projects/feevale/ProgSistDistribuidos/20151029-RMIMcDonalds/src/MacPDVService.java</file>
+            <file>file:/home/samuel/Projects/feevale/ProgSistDistribuidos/20151029-RMIMcDonalds/src/Client.java</file>
+            <file>file:/home/samuel/Projects/feevale/ProgSistDistribuidos/20151029-RMIMcDonalds/src/PainelCozinha.java</file>
+            <file>file:/home/samuel/Projects/feevale/ProgSistDistribuidos/20151029-RMIMcDonalds/src/MacPDV.java</file>
+            <file>file:/home/samuel/Projects/feevale/ProgSistDistribuidos/20151029-RMIMcDonalds/src/Order.java</file>
+            <file>file:/home/samuel/Projects/feevale/ProgSistDistribuidos/20151029-RMIMcDonalds/src/MacPDVGUI.java</file>
         </group>
     </open-files>
 </project-private>

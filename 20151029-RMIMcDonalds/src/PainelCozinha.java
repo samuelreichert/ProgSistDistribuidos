@@ -36,6 +36,7 @@ public class PainelCozinha extends javax.swing.JFrame {
         txtSaidaPedidos = new javax.swing.JTextArea();
         txtURI = new javax.swing.JTextField();
         btConectar = new javax.swing.JButton();
+        notifyDone = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -53,15 +54,23 @@ public class PainelCozinha extends javax.swing.JFrame {
             }
         });
 
+        notifyDone.setText("Notificar Pedido Pronto");
+        notifyDone.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                notifyDoneActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 388, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(notifyDone, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 388, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addComponent(txtURI)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btConectar)))
@@ -71,12 +80,13 @@ public class PainelCozinha extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 219, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtURI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btConectar))
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(notifyDone))
         );
 
         pack();
@@ -93,6 +103,14 @@ public class PainelCozinha extends javax.swing.JFrame {
             e.printStackTrace();
         }
     }//GEN-LAST:event_btConectarActionPerformed
+
+    private void notifyDoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_notifyDoneActionPerformed
+        try {
+            pdv.notifyOrderDone();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_notifyDoneActionPerformed
 
     /**
      * @param args the command line arguments
@@ -132,6 +150,7 @@ public class PainelCozinha extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btConectar;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton notifyDone;
     public javax.swing.JTextArea txtSaidaPedidos;
     private javax.swing.JTextField txtURI;
     // End of variables declaration//GEN-END:variables

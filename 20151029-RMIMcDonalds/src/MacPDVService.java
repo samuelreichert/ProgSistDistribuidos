@@ -1,4 +1,5 @@
 
+import java.awt.Color;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
@@ -50,5 +51,12 @@ public class MacPDVService extends UnicastRemoteObject implements MacPDV {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public void notifyOrderDone() throws RemoteException {
+       MacPDVGUI.btEntregar.setEnabled(true);
+       MacPDVGUI.labelStatus.setText("Pedido Pronto!");
+       MacPDVGUI.labelStatus.setForeground(Color.green);
     }
 }

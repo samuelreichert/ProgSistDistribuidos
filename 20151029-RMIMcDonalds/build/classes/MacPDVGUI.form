@@ -90,6 +90,9 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btEntregarActionPerformed"/>
       </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JButton" name="btComprarRefri">
       <Properties>
@@ -120,6 +123,9 @@
           </Border>
         </Property>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
     </Component>
   </SubComponents>
 </Form>
