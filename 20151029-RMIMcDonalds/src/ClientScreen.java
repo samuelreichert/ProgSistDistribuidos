@@ -1,13 +1,5 @@
-
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 
 public class ClientScreen extends UnicastRemoteObject implements Client {
     public PainelCozinha panel;
@@ -25,6 +17,5 @@ public class ClientScreen extends UnicastRemoteObject implements Client {
     @Override
     public void notifyDelivery() throws RemoteException {
         panel.txtSaidaPedidos.setText("");
-    }
-    
+    }    
 }
